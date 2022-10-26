@@ -2,6 +2,7 @@ package com.toysground.todaytodo.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -11,6 +12,7 @@ import java.util.HashMap;
 @RestController
 public class itemcontroller {
 
+    @GetMapping("/test")
     public ResponseEntity<?> test(){
         HashMap<String,String> map = new HashMap<>();
         map.put("data","김상배");
